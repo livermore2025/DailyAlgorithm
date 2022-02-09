@@ -1,4 +1,5 @@
 const insertionSort = function (arr, cb = (a) => a) {
+  // 삽입정렬
   let tmp = 0;
   for (let i = 0; i < arr.length; i++) {
     // i가 0일 때 j가 1
