@@ -1,5 +1,8 @@
 const mergeSort = function (arr) {
   // TODO: 여기에 코드를 작성합니다.
+  // 1. arr.length가 1일 때 까지 나눈다.
+  // 2. arr.length가 1이면, left right를 비교한다.
+  // 3. 비교해서 작은 순으로 newArray에 넣는다
   let newArray = [];
   if (arr.length === 1) return arr;
 
