@@ -84,3 +84,17 @@ const robotPath = function (room, src, dst) {
     }
   }
 };
+
+let room = [
+  [0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 0, 1, 0],
+  [0, 1, 0, 0, 0, 0],
+  [0, 0, 1, 1, 1, 0],
+  [1, 0, 0, 0, 0, 0],
+];
+let src = [4, 2];
+let dst = [2, 2];
+let output = robotPath(room, src, dst);
+console.log(output); // --> 8
+
+// https://en.wikipedia.org/wiki/Breadth-first_search
