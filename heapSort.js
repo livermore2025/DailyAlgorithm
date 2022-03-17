@@ -14,6 +14,7 @@ function removeRoot(heap) {
     let rightChild = 2 * idx + 2;
     let minIdx = idx;
 
+    // 자식 중에 더 작은애랑 바꾸는 걸 생각해야 한다.
     if (leftChild < heap.length && heap[minIdx] > heap[leftChild]) {
       minIdx = leftChild;
     }
@@ -21,6 +22,7 @@ function removeRoot(heap) {
       minIdx = rightChild;
     }
 
+    // 더 이상 바꿀 게 없다면 재귀를 끝낸다.
     if (minIdx === idx) return;
     swap(idx, minIdx, heap);
     arrangeFromRoot(heap, minIdx);
