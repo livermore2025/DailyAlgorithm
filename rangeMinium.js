@@ -1,5 +1,13 @@
 let segmentTree = {};
 
+/**
+ * @param {시작 노드의 번호} node
+ * @param {전체 배열 시작} index start
+ * @param {전체 배열 마지막 index} end
+ * @param {구하려는 구간의 시작 index} left
+ * @param {구하려는 구간 마지막 index} right
+ * @returns
+ */
 const query = (node, start, end, left, right) => {
   if (end < left || right < start) {
     return Number.MAX_SAFE_INTEGER;
